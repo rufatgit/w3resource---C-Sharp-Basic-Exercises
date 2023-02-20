@@ -1,15 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-
-namespace _1_
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            /*        Console.WriteLine("Hello World!");
+                    Console.WriteLine("Hello World!");
 
                     Console.WriteLine(15+15);
                     Console.WriteLine(15/5);
@@ -18,7 +8,7 @@ namespace _1_
                     Console.WriteLine(14+(-4)*6/11);
                     Console.WriteLine(2+15/6*1-7%2);
 
-                    //EX5
+                    //EX 5. Write a C# Sharp program to swap two numbers.
                     Console.WriteLine("Input the first number:");
                     double a=double.Parse(Console.ReadLine());
                     Console.WriteLine("Input the second number");
@@ -30,10 +20,10 @@ namespace _1_
                     b = tmp;
                     Console.WriteLine("a- "+a);
                     Console.WriteLine("b- "+b);
-        */
+        
 
-            /*
-                        //EX6
+            
+                        //EX 6. Write a C# Sharp program to print the output of multiplication of three numbers which will be entered by the user.
                         Console.WriteLine("1st factor to multiply:");
                         double c = double.Parse(Console.ReadLine());
                         Console.WriteLine("2nd factor to multiply:");
@@ -44,9 +34,9 @@ namespace _1_
                         double product = c * d * e;
 
                         Console.WriteLine("Product is "+product);
-            */
-            /*
-                        //EX7
+            
+           
+                        //EX 7. Write a C# Sharp program to print on screen the output of adding, subtracting, multiplying and dividing of two numbers which will be entered by the user.
                         Console.WriteLine("First number:");
                         double a=double.Parse(Console.ReadLine());
                         Console.WriteLine("First number:");
@@ -63,11 +53,11 @@ namespace _1_
                         Console.WriteLine("{0} x {1} = {2}", a, b, multiplication);
                         Console.WriteLine("{0} / {1} = {2}", a, b, divison);
                         Console.WriteLine("{0} % {1} = {2}", a, b, remainder);
-            */
+            
 
 
-            //EX8
-            /*
+            //EX 8. Write a C# Sharp program that takes a number as input and print its multiplication table.
+            
                         Console.WriteLine("Enter the number to see its multiplication table:");
                         double input=double.Parse(Console.ReadLine());
 
@@ -75,9 +65,9 @@ namespace _1_
                         {
                             Console.WriteLine("{0} x {1} = {2}", input, i, input*i);
                         }
-            */
+            
 
-            /*            //EX9
+                        //EX 9. Write a C# Sharp program that takes four numbers as input to calculate and print the average.
                         Console.WriteLine("Enter 4 numbers to calculate their average:");
                         string input = Console.ReadLine();
 
@@ -112,10 +102,10 @@ namespace _1_
                         }
                         Console.Write("is: " + sum);
 
-            */
+            
 
-            //EX10
-            /*
+            //EX 10. Write a C# Sharp program to that takes three numbers(x,y,z) as input and print the output of (x+y).z and x.y + y.z.
+            
                         Console.WriteLine("Enter 3 numbers: ");
                         double x = double.Parse(Console.ReadLine());
 
@@ -132,8 +122,8 @@ namespace _1_
                         Console.Write(" is " + msm);
             */
 
-            //EX11
-            /*
+            //EX 11. Write a C# Sharp program that takes an age (for example 20) as input and prints something as "You look older than 20".
+            
                         Console.WriteLine("Write your age:");
                         string input = Console.ReadLine();
 
@@ -159,8 +149,9 @@ namespace _1_
                         }
             */
 
-            //EX12
-            /*
+            //EX 12. Write a C# program to that takes a number as input and display it four times in a row (separated by blank spaces), and then
+            //four times in the next row, with no separation. You should do it two times: Use Console. Write and then use {0}.
+            
                         Console.WriteLine("Enter number for dummy exercise:");
                         double input = double.Parse(Console.ReadLine());
 
@@ -169,12 +160,12 @@ namespace _1_
                             Console.WriteLine("{0} {0} {0} {0}", input);
                             Console.WriteLine("{0}{0}{0}{0}", input);
                         }
-            */
+            
 
-            //EX13-dummy
+            
 
-            //EX14
-            /*
+            //EX 14. Write a C# program to convert from celsius degrees to Kelvin and Fahrenheit.
+            
                         Console.WriteLine("Enter celcius degree:");
                         double c= double.Parse(Console.ReadLine());
 
@@ -183,10 +174,10 @@ namespace _1_
 
                         Console.WriteLine("From celcius to kelvin: "+k);
                         Console.WriteLine("From celcius to fahrenheit: "+f);
-            */
+            
 
-            //EX15
-            /*
+            //EX 15. Write a C# program remove specified a character from a non-empty string using index of a character. 
+            
                         Console.WriteLine("Input string:");
                         string i=Console.ReadLine();
                         Console.WriteLine("Enter index number to delete specified character: ");
@@ -200,10 +191,10 @@ namespace _1_
                         {
                             Console.WriteLine("Message: "+err.Message);
                         }
-            */
+            
 
-            //EX16
-            /*
+            //EX 16. Write a C# program to create a new string from a given string where the first and last characters will change their positions.
+            
                         Console.WriteLine("Enter string to swap its first and last characters.");
                         string input = Console.ReadLine();
 
@@ -221,9 +212,9 @@ namespace _1_
 
                         Console.WriteLine(sb);
 
-            */
+            
 
-            /*           //EX17
+                       //EX 17. Write a C# program to create a new string from a given string (length 1 or more ) with the first character added at the front and back.
 
                        Console.WriteLine("Enter string to add its first character at the front and back: ");
                        string input = Console.ReadLine();
@@ -259,10 +250,10 @@ namespace _1_
                            Console.WriteLine("Input length should be bigger than 1.");
                        }
 
-           */
+           
 
-            //EX18
-            /*            Console.WriteLine("Enter two integers:");
+            //EX 18. Write a C# program to check two given integers and return true if one is negative and one is positive.
+                        Console.WriteLine("Enter two integers:");
                         double i=Convert.ToDouble(Console.ReadLine());
                         double j=Convert.ToDouble(Console.ReadLine());
                         bool ij=true;
@@ -276,10 +267,10 @@ namespace _1_
                             Console.WriteLine(ij);
                         }
                         Console.WriteLine((i > 0 && j < 0 || i < 0 && j > 0));
-            */
+            
 
 
-            /*          //EX19
+                      //EX 19. Write a C# program to compute the sum of two given integers, if two values are equal then return the triple of their sum.
                       Console.WriteLine("Enter two integers:");
                       double a=double.Parse(Console.ReadLine());
                       double b = double.Parse(Console.ReadLine());
@@ -293,9 +284,10 @@ namespace _1_
                           Console.WriteLine("Sum: "+(a+b));
                       }
 
-          */
-            /*
-                        //EX20
+          
+            
+                        //EX 20. Write a C# program to get the absolute value of the difference between two given numbers. Return double the absolute value of the 
+                        //difference if the first number is greater than second number.
                         Console.WriteLine("Enter two numbers:");
                         double a=double.Parse(Console.ReadLine());
                         double b = double.Parse(Console.ReadLine());
@@ -309,19 +301,19 @@ namespace _1_
                         {
                             Console.WriteLine("Absolute value is abs+abs= "+2*abs);
                         }
-            */
+            
 
-            //EX21
-            /*
+            //EX 21. Write a C# program to check the sum of the two given integers and return true if one of the integer is 20 or if their sum is 20.
+            
                         Console.WriteLine("Enter two numbers:");
                         double a = double.Parse(Console.ReadLine());
                         double b = double.Parse(Console.ReadLine());
 
                         Console.WriteLine(a == 20 || b == 20 || a + b == 20);
-            */
+            
 
-            //EX22
-            /*
+            //EX 22. Write a C# program to check if an given integer is within 20 of 100 or 200.
+            
                         Console.WriteLine("Enter two numbers");
                         int a = int.Parse(Console.ReadLine());
                         bool b = true;
@@ -334,18 +326,18 @@ namespace _1_
                             b = false;
                             Console.WriteLine(b);
                         }
-            */
+            
 
-            //EX23
-            /*
+            //EX 23. Write a C# program to convert a given string into lowercase.
+            
                         Console.WriteLine("Input string:");
                         string input=Console.ReadLine();
 
                         Console.WriteLine(input.ToLower());
-            */
+            
 
-            //EX24
-            /*
+            //EX 24. Write a C# program to find the longest word in a string.
+            
                         Console.WriteLine("Input string");
                         string input=Console.ReadLine();
 
@@ -368,10 +360,10 @@ namespace _1_
 
                         Console.WriteLine("Longest word is "+max);
 
-            */
+            
 
-            //EX25
-            /*
+            //EX 25. Write a C# program to print the odd numbers from 1 to 99. Prints one number per line.
+            
                         for(int i=0; i<100; ++i)
                         {
                             if(i%2==1)
@@ -379,9 +371,9 @@ namespace _1_
                                 Console.WriteLine(i);
                             }
                         }
-            */
+            
 
-            //EX26
+            //EX 26. Write a C# program to compute the sum of the first 500 prime numbers.
 
             int sum = 0;
             int n = 2;
@@ -404,7 +396,7 @@ namespace _1_
 
 
 
-        }
+        
 
         public static bool Prime(int i)
         {
@@ -429,5 +421,4 @@ namespace _1_
 
 
 
-    }
-}
+
