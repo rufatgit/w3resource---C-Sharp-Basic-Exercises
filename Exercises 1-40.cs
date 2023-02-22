@@ -419,6 +419,234 @@
         }
 
 
+//EX 30. Write a C# program to convert a hexadecimal number to decimal number.
+
+            string hex = "5F";
+            Console.WriteLine("Hexadecimal number: "+hex);
+            int decimal_value=int.Parse(hex, System.Globalization.NumberStyles.HexNumber);
+            Console.WriteLine("Convert  to-");
+            Console.WriteLine("Decimal number: " + decimal_value);
+
+
+//EX 31. Write a C# program to multiply corresponding elements of two arrays of integers.
+
+            Console.WriteLine("Enter first array:");
+            string input1 = Console.ReadLine();
+
+            List<int> list1 = new List<int>();
+
+            foreach (string s in input1.Split(' '))
+            {
+                list1.Add(int.Parse(s));
+            }
+
+            Console.WriteLine("Enter second array:");
+            string input2 = Console.ReadLine();
+
+            List<int> list2 = new List<int>();
+
+            foreach (string s in input2.Split(' '))
+            {
+                list2.Add(int.Parse(s));
+            }
+
+
+            if (list1.Count == list2.Count)
+            {
+                List<int> product = new List<int>();
+
+                for (int i = 0; i < list1.Count; i++)
+                {
+                    product.Add(list1[i] * list2[i]);
+                }
+
+                foreach (int i in product)
+                {
+                    Console.Write(i + " ");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Array sizes should be same!");
+            }
+
+
+
+//EX 32. Write a C# program to create a new string of four copies, taking last four characters 
+//from a given string. If the length of the given string is less than 4 return the original one.
+
+            try
+            {
+                Console.WriteLine("Enter string to print out its last 4 characters");
+                StringBuilder sb = new StringBuilder(Console.ReadLine());
+
+
+                if(sb.Length >= 4) 
+                {
+                    string last4 = sb.ToString(sb.Length - 4, 4);
+                    string s = last4 + last4 + last4 + last4;
+                    Console.WriteLine(s);
+                }
+                else
+                {
+                    Console.WriteLine("String size should be bigger than or equal 4.");
+                }
+                
+
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine("Message: "+err.Message);
+                Console.WriteLine("Stack trace: "+err.StackTrace);
+            }
+
+
+
+//EX 33. Write a C# program to check if a given positive number is a multiple of 3 or a multiple of 7.
+
+
+            Console.WriteLine("Enter positive integer");
+            int input=int.Parse(Console.ReadLine());
+            int inp3 = input % 3;
+            int inp2 = input % 7;
+
+            if (input > 0)
+            {
+                if (inp3 == 0 || inp2 == 0)
+                {
+                    Console.WriteLine(true);
+                }
+                else
+                {
+                    Console.WriteLine(false);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Should be greater than 0");
+            }
+           
+
+
+
+
+//EX 34. Write a C# program to check if a string starts with a specified word. 
+
+            Console.WriteLine("Enter sentence: ");
+            string input = Console.ReadLine();
+
+            if (input.StartsWith("hello", StringComparison.OrdinalIgnoreCase))
+            {
+                Console.WriteLine(true);
+            }
+            else
+            {
+                Console.WriteLine(false);
+            }
+
+
+//EX 35. Write a C# program to check two given numbers where one is less than 100 and other is greater than 200.
+            Console.WriteLine("Enter two numbers:");
+            double a=double.Parse(Console.ReadLine());
+            double b=double.Parse(Console.ReadLine());
+
+            Console.WriteLine(a<100 && b>200);
+
+
+//EX 36. Write a C# program to check if an integer (from the two given integers) is in the range -10 to 10. 
+
+            Console.WriteLine("Enter two integers");
+            int i=int.Parse(Console.ReadLine());
+            int b=int.Parse(Console.ReadLine());
+
+            Console.WriteLine(-10<=i && i<=10 || -10<=b && b<=10);
+
+//EX 37. Write a C# program to check if "HP" appears at second position in a string and returns the string without "HP".
+
+
+            Console.WriteLine("Enter text to check \"HP\": ");
+            string hp=Console.ReadLine();
+
+            Console.WriteLine((hp.Substring(1,2).Equals("HP") ? hp.Remove(1,2) : hp));
+
+
+//EX 38. Write a C# program to get a new string of two characters from a given string. The first and second character of 
+//the given string must be "P" and "H", so PHP will be "PH". 
+
+
+            Console.WriteLine("Enter text to check \"PH\"");
+            string input = Console.ReadLine();
+
+            try
+            {
+                if (input[..2].Equals("PH", StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine("ph");
+                }
+                else
+                {
+                    Console.WriteLine(false);
+                }
+
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine("Message: "+ err.Message);
+            }
+
+
+//EX 39. Write a C# program to find the largest and lowest values from three integer values.
+
+            Console.WriteLine("Enter 3 values to find lowest and largest:");
+            string input=Console.ReadLine();
+
+            List<double> values=new List<double>();
+
+            foreach(string s in input.Split(' '))
+            {
+                values.Add(double.Parse(s));
+            }
+            double largest = values[0];
+            double lowest = values[0];
+            for(int i=0; i<values.Count; i++)
+            {
+                if(values[i] > largest)
+                {
+                    largest = values[i];
+                }
+
+                if(values[i] < lowest)
+                {
+                    lowest = values[i];
+                }    
+            }
+
+            Console.WriteLine("Largest: "+largest);
+            Console.WriteLine("lowest: " + lowest);
+
+
+
+//EX 40. Write a C# program to check the nearest value of 20 of two given integers and return 0 if two numbers are same.
+
+
+            Console.WriteLine("Enter two numbers to find nearest of 20");
+            double a=double.Parse(Console.ReadLine());
+            double b=double.Parse(Console.ReadLine());
+
+            if(20-a<20-b)
+            {
+                Console.WriteLine("Nearest value to 20 is "+ a);
+            }
+            else if (a==b)
+            {
+                Console.WriteLine(false);
+            }
+            else
+            {
+                Console.WriteLine("Nearest value to 20 is " + b);
+            }
+
+
 
 
 
