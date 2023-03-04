@@ -22,7 +22,7 @@
                     Console.WriteLine("b- "+b);
         
 
-            
+             
                         //EX 6. Write a C# Sharp program to print the output of multiplication of three numbers which will be entered by the user.
                         Console.WriteLine("1st factor to multiply:");
                         double c = double.Parse(Console.ReadLine());
